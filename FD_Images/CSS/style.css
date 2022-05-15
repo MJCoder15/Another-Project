@@ -1,0 +1,264 @@
+/* RESETING CSS */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+
+:root{
+    --navbar-height:60px;
+}
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    opacity: 0.7;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation bar logo and image */
+
+#logo{
+    margin-left: -30px;
+}
+
+#logo img{
+    margin: 10px 40px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+#logo img:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Navigation bar List styling */
+
+#navbar ul{
+    display: flex;
+}
+
+/* #navbar ::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.6;
+} */
+
+
+
+#navbar ul li{
+    /* color: whitesmoke; */
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/* Setting padding in nav bar's a tag */
+
+#navbar ul li a{
+    color:coral;
+    display: block;
+   padding: 10px 10px;
+   text-decoration: none;
+   border-radius: 20px;
+   font-weight: bolder;
+}
+
+#navbar ul li a:hover{
+    color:darkmagenta;
+    background-color:darkgoldenrod;
+}
+
+/*Editing Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 150px;
+    justify-content: center;
+    align-items: center;
+    color:darkblue;
+    height: 526px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#home .primary{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url("../bg.jpg") no-repeat center center/cover;
+    height: 640px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    color:darkkhaki;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#home p{
+    color:rgba(62, 158, 110, 0.833);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.primary{
+    font-size: 3rem;
+}
+.btn{
+    padding: 7px 40px;
+    border-radius: 20px;
+    color: darkred;
+    font-weight: 600;
+    font-size: 20px;
+    background-color:olive ;
+    border: 2px solid lightseagreen;
+    margin: 25px;
+}
+
+.btn:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+    color: red
+}
+
+
+.center{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    
+}
+.secondary{
+    font-size: 2.2rem;
+    padding: 15px;
+}
+
+/* Services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 35px;
+    margin: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(155, 186, 185, 0.833);
+}
+
+#services .box img{
+    width: 300px;
+    height: 160px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+.services-container{
+    background-color: rgb(174, 220, 217);
+}
+
+#services .box p{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+}
+.services-container h1{
+    font-size: 3rem;
+}
+/* contact-section */
+
+
+/* Clients Section */
+#client-section{
+height: 660px;
+position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../bg2.jpg") no-repeat;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+}
+
+#clients img{
+    height: 180px;
+    border-radius: 10px;
+}
+
+.client-item{
+    padding: 2rem;
+}
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../contactus.jpg") no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+/* Footer Styling */
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    opacity: 0.8;
+    font-size: 15px;
+}
